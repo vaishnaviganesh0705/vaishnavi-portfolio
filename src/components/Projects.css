@@ -1,0 +1,82 @@
+.projects__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 40px;
+  padding: 48px 0;
+  border-top: 1px solid var(--border-soft);
+  align-items: start;
+}
+
+.projects__list .project:last-child {
+  padding-bottom: 0;
+}
+
+.project--reverse {
+  grid-template-columns: 1fr 200px;
+}
+
+.project--reverse .project__index {
+  order: 2;
+  text-align: right;
+}
+
+.project__index {
+  font-family: var(--font-display);
+  font-size: 3.2rem;
+  color: var(--border);
+  line-height: 1;
+}
+
+.project__name {
+  font-size: 1.6rem;
+  margin-bottom: 4px;
+}
+
+.project__tagline {
+  color: var(--amber);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  margin-bottom: 16px;
+}
+
+.project__description {
+  color: var(--text-muted);
+  max-width: 62ch;
+  margin-bottom: 18px;
+}
+
+.project__stack {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.project__stack span {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--indigo);
+  border: 1px solid var(--border);
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+@media (max-width: 700px) {
+  .project,
+  .project--reverse {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .project--reverse .project__index {
+    order: 0;
+    text-align: left;
+  }
+  .project__index {
+    font-size: 2.2rem;
+  }
+}
