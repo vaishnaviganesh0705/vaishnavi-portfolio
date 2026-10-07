@@ -2,11 +2,17 @@ import "./Skills.css";
 
 const GROUPS = [
   { label: "Languages", items: ["C", "C++", "Java", "Python"] },
+
   { label: "Frontend", items: ["HTML", "CSS", "JavaScript", "React.js"] },
-  { label: "Backend", items: ["Flask"] },
-  { label: "Database & cloud", items: ["MySQL", "Vercel"] },
-  { label: "Core concepts", items: ["Data Structures & Algorithms", "OOP", "DBMS"] },
+
+  { label: "Backend", items: ["FastAPI"] },
+
+  { label: "Database & Cloud", items: ["MySQL", "Vercel"] },
+
+  { label: "Core Concepts", items: ["Data Structures & Algorithms", "OOP", "DBMS"] },
+
   { label: "Design", items: ["Figma", "Canva", "Blender"] },
+
   { label: "Tools", items: ["Git", "GitHub", "VS Code", "Eclipse", "Jupyter Notebook"] },
 ];
 
